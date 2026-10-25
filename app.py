@@ -140,9 +140,11 @@ if st.button("Predict House Price"):
         "SaleCondition": SaleCondition
     }
     
-    import os 
-    API_URL = os.getenv("API_URL", "http://127.0.0.1:8000/predict")
+    
+ 
+    import os
 
+    API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000").rstrip("/")
     try:
 
         response = requests.post(
