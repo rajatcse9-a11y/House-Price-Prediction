@@ -1,8 +1,8 @@
 fastapi
 uvicorn
-pandas
-numpy
-scikit-learn
-joblib
 streamlit
 requests
+pandas
+numpy
+joblib
+scikit-learn
